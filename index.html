@@ -1,169 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alçar Serviços Elétricos | Uberlândia e Região</title>
-  <meta name="description" content="Serviços elétricos profissionais em Uberlândia e região com responsável qualificado em NRs 06, 10, 12, 18 e 35. Instalações, adequações, manutenção e serviços técnicos com segurança.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alçar Serviços Elétricos: instalações elétricas de alto padrão em Uberlândia/MG e região." />
+  <title>Alçar Serviços Elétricos | Uberlândia/MG</title>
 
-  <!-- =====================================================
-    ESPAÇO RESERVADO: GOOGLE ANALYTICS / GTAG
-    Cole aqui o script do GA4 antes do fechamento do head.
-  ====================================================== -->
-
-  <!-- =====================================================
-    ESPAÇO RESERVADO: META PIXEL
-    Cole aqui o código base do Pixel da Meta.
-  ====================================================== -->
-
-  <!-- =====================================================
-    ESPAÇO RESERVADO: MICROSOFT CLARITY
-    Cole aqui o script do Clarity.
-  ====================================================== -->
+  <!-- CLARITY - cole o script aqui -->
+  <!-- META PIXEL - cole o script aqui -->
+  <!-- GOOGLE ANALYTICS - cole o script aqui -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Alçar Serviços Elétricos">
-      <img src="assets/logo-alcar.png" alt="Logo Alçar Serviços Elétricos">
+    <a href="#hero" class="brand" aria-label="Alçar Serviços Elétricos">
+      <img src="assets/logo-alcar.webp" alt="Alçar Serviços Elétricos" />
     </a>
-    <a class="header-cta js-whatsapp" href="#" data-message="Olá, João! Vim pela landing page da Alçar e quero solicitar um orçamento." aria-label="Chamar a Alçar no WhatsApp">Orçamento</a>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="#resolvemos">Resolvemos</a>
+      <a href="#razoes">Razões para contratar</a>
+      <a href="#expert">Expert</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://wa.me/5534987210841?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vim%20pelo%20site%20da%20Al%C3%A7ar%20e%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+    </nav>
   </header>
 
-  <main id="top">
-    <section class="hero section-pad">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Uberlândia/MG e região</p>
-          <h1>Serviços elétricos com segurança, padrão técnico e acabamento profissional.</h1>
-          <p class="hero-text">Instalações, manutenções e adequações elétricas para residências, comércios e empresas que precisam de um serviço confiável, limpo e bem executado.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary js-whatsapp" href="#" data-message="Olá, João! Quero um orçamento para serviço elétrico em Uberlândia/região.">Solicitar orçamento no WhatsApp</a>
-            <a class="btn btn-secondary" href="#servicos">Ver serviços</a>
-          </div>
-          <div class="trust-row" aria-label="Diferenciais">
-            <span>NR 06</span><span>NR 10</span><span>NR 12</span><span>NR 18</span><span>NR 35</span>
-          </div>
+  <main>
+    <section id="hero" class="hero section-dark">
+      <div class="hero-bg" role="img" aria-label="Ambiente residencial premium com instalação elétrica de alto padrão"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Uberlândia/MG e região</p>
+        <h1>Instalações elétricas de alto padrão com segurança, norma e acabamento impecável.</h1>
+        <p class="hero-text">A Alçar Serviços Elétricos entrega soluções para residências, comércios e obras que precisam de confiança técnica, organização e execução profissional.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary glow" href="https://wa.me/5534987210841?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20el%C3%A9tricos." target="_blank" rel="noopener">Solicitar orçamento</a>
+          <a class="btn btn-secondary glow" href="#resolvemos">Ver serviços</a>
         </div>
-        <div class="hero-card reveal">
-          <div class="expert-photo placeholder-photo">
-            <img src="assets/joao-ref-1.png" alt="João, responsável técnico da Alçar Serviços Elétricos">
-            <div class="photo-note">Substituir por foto profissional do João em ambiente de trabalho</div>
-          </div>
-          <div class="status-card">
-            <strong>Atendimento técnico</strong>
-            <span>Planejamento, execução e segurança em cada detalhe.</span>
-          </div>
+        <div class="trust-row">
+          <span>NR 06</span><span>NR 10</span><span>NR 12</span><span>NR 18</span><span>NR 35</span>
         </div>
       </div>
     </section>
 
-    <section id="servicos" class="section-pad services-section">
+    <section id="resolvemos" class="section section-dark">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">O que a Alçar resolve</p>
-          <h2>Energia funcionando com segurança, organização e dentro das normas.</h2>
-          <p>Uma elétrica mal feita pode gerar queda de energia, aquecimento, risco de choque, queima de equipamentos e prejuízo. A Alçar entra para diagnosticar, corrigir e executar com responsabilidade.</p>
-        </div>
+        <p class="eyebrow">O que resolvemos</p>
+        <h2>Serviços elétricos para quem não aceita improviso.</h2>
         <div class="cards-grid">
-          <article class="service-card reveal">
-            <span class="card-number">01</span>
-            <h3>Instalações elétricas</h3>
-            <p>Execução de pontos, quadros, circuitos, iluminação, tomadas e estruturas elétricas para novos ambientes.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="card-number">02</span>
-            <h3>Manutenção e correções</h3>
-            <p>Identificação de falhas, troca de componentes, revisão de instalações e correção de problemas elétricos.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="card-number">03</span>
-            <h3>Adequações e segurança</h3>
-            <p>Apoio técnico para adequações em ambientes residenciais, comerciais e obras, seguindo boas práticas e NRs.</p>
-          </article>
+          <article class="card"><h3>Instalações elétricas</h3><p>Execução técnica para projetos residenciais e comerciais com atenção ao acabamento e à segurança.</p></article>
+          <article class="card"><h3>Quadros e distribuição</h3><p>Organização de circuitos, identificação e adequação para uma instalação mais segura e eficiente.</p></article>
+          <article class="card"><h3>Manutenção elétrica</h3><p>Diagnóstico, correção de falhas e prevenção de riscos para evitar sustos, perdas e retrabalho.</p></article>
+          <article class="card"><h3>Iluminação premium</h3><p>Instalação de pendentes, spots, LED e iluminação de destaque para valorizar ambientes de alto padrão.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section-pad dark-section">
-      <div class="container split-grid">
-        <div class="reveal">
-          <p class="eyebrow light">Por que contratar</p>
-          <h2>Não é “só puxar um fio”. É proteger pessoas, equipamentos e patrimônio.</h2>
+    <section id="razoes" class="section section-blueprint">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Razões para contratar</p>
+          <h2>Energia bem executada aparece no conforto, na segurança e no valor do imóvel.</h2>
+          <p>Uma instalação elétrica profissional protege equipamentos, reduz riscos e entrega um resultado visual mais limpo. Do planejamento ao acabamento, cada detalhe importa.</p>
         </div>
-        <div class="benefits-list reveal">
-          <div><strong>Diagnóstico antes da execução</strong><span>Entendimento do problema e orientação objetiva antes de iniciar.</span></div>
-          <div><strong>Serviço limpo e organizado</strong><span>Mais previsibilidade, menos improviso e acabamento profissional.</span></div>
-          <div><strong>Responsável capacitado</strong><span>João possui NRs 06, 10, 12, 18 e 35, além de vivência em rotina técnica.</span></div>
-          <div><strong>Atendimento regional</strong><span>Uberlândia/MG e cidades próximas, conforme disponibilidade de agenda.</span></div>
+        <div class="reasons-list">
+          <div><strong>01</strong><span>Atendimento técnico com NRs e foco em segurança.</span></div>
+          <div><strong>02</strong><span>Execução organizada, sem aparência de gambiarra.</span></div>
+          <div><strong>03</strong><span>Acabamento compatível com projetos de alto valor.</span></div>
+          <div><strong>04</strong><span>Atendimento direto com João pelo WhatsApp.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad expert-section">
+    <section id="expert" class="section section-dark expert-section">
       <div class="container expert-grid">
-        <div class="expert-image reveal">
-          <img src="assets/joao-ref-2.png" alt="Foto de referência do João">
-        </div>
-        <div class="reveal">
+        <div class="expert-copy">
           <p class="eyebrow">Sobre o expert</p>
-          <h2>João, responsável pela Alçar Serviços Elétricos.</h2>
-          <p>À frente da Alçar, João atua com foco em segurança, responsabilidade técnica e execução bem feita. Seu trabalho atende quem busca um profissional para resolver serviços elétricos com clareza, compromisso e atenção às normas.</p>
-          <ul class="check-list">
-            <li>NR 06 — Equipamentos de Proteção Individual.</li>
-            <li>NR 10 — Segurança em instalações e serviços em eletricidade.</li>
-            <li>NR 12 — Segurança no trabalho em máquinas e equipamentos.</li>
-            <li>NR 18 — Condições de segurança na construção.</li>
-            <li>NR 35 — Trabalho em altura.</li>
-          </ul>
-          <a class="btn btn-primary js-whatsapp" href="#" data-message="Olá, João! Vi suas qualificações e quero falar sobre um serviço elétrico.">Falar com o João</a>
+          <h2>João, especialista por trás da Alçar Serviços Elétricos.</h2>
+          <p>À frente da Alçar, João une experiência prática, responsabilidade técnica e atenção aos detalhes para entregar instalações elétricas seguras, bem organizadas e com acabamento profissional.</p>
+          <p>Com formações e normas de segurança como NR 06, NR 10, NR 12, NR 18 e NR 35, ele atende Uberlândia/MG e região com foco em confiança, prevenção e qualidade de execução.</p>
+          <a class="btn btn-primary glow" href="https://wa.me/5534987210841?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20sua%20apresenta%C3%A7%C3%A3o%20no%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar com o João</a>
+        </div>
+        <div class="expert-photo-wrap">
+          <img src="assets/expert.webp" alt="João, especialista da Alçar Serviços Elétricos" class="expert-photo" />
         </div>
       </div>
     </section>
 
-    <section class="section-pad faq-section">
+    <section id="faq" class="section section-dark faq-section">
       <div class="container narrow">
-        <div class="section-head reveal">
-          <p class="eyebrow">Dúvidas frequentes</p>
-          <h2>Antes de pedir orçamento</h2>
-        </div>
-        <div class="faq-list reveal">
-          <details>
-            <summary>Vocês atendem só Uberlândia?</summary>
-            <p>O atendimento é em Uberlândia/MG e região. Para cidades próximas, o ideal é chamar no WhatsApp e informar o local do serviço.</p>
-          </details>
-          <details>
-            <summary>Fazem serviço residencial e comercial?</summary>
-            <p>Sim. A proposta da página contempla residências, comércios, obras e empresas que precisam de instalação, manutenção ou adequação elétrica.</p>
-          </details>
-          <details>
-            <summary>O orçamento é feito pelo WhatsApp?</summary>
-            <p>O primeiro contato pode ser pelo WhatsApp. Para alguns casos, João pode solicitar fotos, vídeos ou uma visita técnica para avaliar melhor.</p>
-          </details>
-          <details>
-            <summary>O que são PCMSO, PGR e OS?</summary>
-            <p>PCMSO é o Programa de Controle Médico de Saúde Ocupacional. PGR é o Programa de Gerenciamento de Riscos. OS significa Ordem de Serviço. Esses documentos são comuns em rotinas de segurança do trabalho e prestação de serviços técnicos.</p>
-          </details>
-        </div>
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2>Antes de solicitar seu orçamento</h2>
+        <details><summary>A Alçar atende apenas Uberlândia?</summary><p>O atendimento principal é em Uberlândia/MG, mas também pode ser realizado na região conforme disponibilidade e tipo de projeto.</p></details>
+        <details><summary>Vocês fazem instalações em imóveis de alto padrão?</summary><p>Sim. A proposta da Alçar é unir segurança técnica, organização e acabamento compatível com projetos residenciais e comerciais premium.</p></details>
+        <details><summary>O orçamento é feito pelo WhatsApp?</summary><p>Sim. Você pode enviar fotos, vídeos e explicar sua necessidade pelo WhatsApp para uma primeira avaliação.</p></details>
+        <details><summary>Vocês seguem normas de segurança?</summary><p>João possui NRs como 06, 10, 12, 18 e 35, reforçando o compromisso com segurança e execução responsável.</p></details>
       </div>
     </section>
 
-    <section class="section-pad final-cta">
-      <div class="container reveal">
-        <p class="eyebrow light">CTA matador</p>
-        <h2>Precisa resolver um serviço elétrico sem improviso?</h2>
-        <p>Chame a Alçar agora, envie fotos ou explique o problema e receba o próximo passo para orçamento.</p>
-        <a class="btn btn-light js-whatsapp" href="#" data-message="Olá, João! Preciso resolver um serviço elétrico e quero um orçamento. Posso te enviar fotos?">Chamar no WhatsApp agora</a>
+    <section class="section final-cta">
+      <div class="container cta-box">
+        <p class="eyebrow">CTA final</p>
+        <h2>Quer uma instalação elétrica bonita, segura e sem improviso?</h2>
+        <p>Chame João no WhatsApp e envie os detalhes do seu projeto.</p>
+        <a class="btn btn-primary glow" href="https://wa.me/5534987210841?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20solicitar%20um%20or%C3%A7amento%20com%20a%20Al%C3%A7ar%20Servi%C3%A7os%20El%C3%A9tricos." target="_blank" rel="noopener">Pedir orçamento agora</a>
       </div>
     </section>
   </main>
 
-  <a class="whatsapp-float js-whatsapp" href="#" data-message="Olá, João! Vim pela landing page da Alçar e quero solicitar um orçamento." aria-label="WhatsApp Alçar Serviços Elétricos">
-    <span>WhatsApp</span>
+  <a class="whatsapp-float glow" href="https://wa.me/5534987210841?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vim%20pelo%20site%20da%20Al%C3%A7ar%20e%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.02 3.2A12.74 12.74 0 0 0 5.2 22.68L3.8 28.8l6.26-1.46A12.72 12.72 0 1 0 16.02 3.2Zm0 23.2c-2.05 0-3.96-.6-5.56-1.64l-.4-.25-3.72.87.84-3.63-.26-.42A10.38 10.38 0 1 1 16.02 26.4Zm5.92-7.78c-.32-.16-1.9-.94-2.2-1.05-.3-.1-.52-.16-.74.16-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.6-1.92-1.8-2.24-.18-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.1-.22.05-.4-.03-.57-.08-.16-.74-1.78-1.02-2.44-.27-.64-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.4-.3.32-1.14 1.11-1.14 2.7 0 1.6 1.17 3.14 1.33 3.36.16.22 2.3 3.5 5.57 4.9.78.34 1.38.54 1.85.69.78.25 1.49.22 2.05.13.63-.1 1.9-.78 2.17-1.52.27-.75.27-1.38.19-1.52-.08-.14-.3-.22-.62-.38Z"/></svg>
   </a>
 
   <script src="script.js"></script>
