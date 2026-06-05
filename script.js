@@ -114,6 +114,47 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeModal();
 });
 
+const appsScriptUrl = "https://script.google.com/macros/s/AKfycbx7xoiDSqeZOdUxSNEUshGktoMlkrSEYoJe6NrgyAp_0jXAgkykT7Qj7n7jPyscxy36/exec";
+const checklistPdfUrl = "assets/checklist-alcar.pdf";
+
+if (checklistForm) {
+  checklistForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const submitButton = checklistForm.querySelector("button[type='submit']");
+    submitButton.textContent = "Enviando...";
+    submitButton.disabled = true;
+
+    const formData = {
+      nome: checklistForm.nome.value,
+      whatsapp: checklistForm.whatsapp.value,
+      email: checklistForm.email.value,
+      profissao: checklistForm.profissao.value
+    };
+
+    try {
+      await fetch(appsScriptUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      window.open(checklistPdfUrl, "_blank");
+      checklistModal.classList.remove("active");
+      checklistForm.reset();
+
+    } catch (error) {
+      alert("Não foi possível enviar seus dados. Tente novamente.");
+    } finally {
+      submitButton.textContent = "Acessar checklist agora";
+      submitButton.disabled = false;
+    }
+  });
+}
+
 if (checklistForm) {
   checklistForm.addEventListener('submit', (event) => {
     event.preventDefault();
