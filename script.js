@@ -74,3 +74,60 @@ if (form && resultado) {
     `;
   });
 }
+
+
+const openChecklistModal = document.getElementById('openChecklistModal');
+const closeChecklistModal = document.getElementById('closeChecklistModal');
+const checklistModal = document.getElementById('checklistModal');
+const checklistForm = document.getElementById('checklistForm');
+const checklistPdfUrl = 'assets/checklist-alcar.pdf';
+
+function openModal() {
+  if (!checklistModal) return;
+  checklistModal.classList.add('active');
+  checklistModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+
+function closeModal() {
+  if (!checklistModal) return;
+  checklistModal.classList.remove('active');
+  checklistModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+}
+
+if (openChecklistModal) {
+  openChecklistModal.addEventListener('click', openModal);
+}
+
+if (closeChecklistModal) {
+  closeChecklistModal.addEventListener('click', closeModal);
+}
+
+if (checklistModal) {
+  checklistModal.addEventListener('click', (event) => {
+    if (event.target === checklistModal) closeModal();
+  });
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeModal();
+});
+
+if (checklistForm) {
+  checklistForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(checklistForm);
+    const nome = formData.get('nome') || '';
+    const whatsapp = formData.get('whatsapp') || '';
+    const email = formData.get('email') || '';
+    const profissao = formData.get('profissao') || '';
+
+    console.log('Lead checklist:', { nome, whatsapp, email, profissao });
+
+    window.open(checklistPdfUrl, '_blank');
+    closeModal();
+    checklistForm.reset();
+  });
+}
