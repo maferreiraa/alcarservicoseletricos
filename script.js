@@ -80,7 +80,6 @@ const openChecklistModal = document.getElementById('openChecklistModal');
 const closeChecklistModal = document.getElementById('closeChecklistModal');
 const checklistModal = document.getElementById('checklistModal');
 const checklistForm = document.getElementById('checklistForm');
-const checklistPdfUrl = 'assets/checklist-alcar.pdf';
 
 function openModal() {
   if (!checklistModal) return;
