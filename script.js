@@ -154,21 +154,3 @@ if (checklistForm) {
     }
   });
 }
-
-if (checklistForm) {
-  checklistForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(checklistForm);
-    const nome = formData.get('nome') || '';
-    const whatsapp = formData.get('whatsapp') || '';
-    const email = formData.get('email') || '';
-    const profissao = formData.get('profissao') || '';
-
-    console.log('Lead checklist:', { nome, whatsapp, email, profissao });
-
-    window.open(checklistPdfUrl, '_blank');
-    closeModal();
-    checklistForm.reset();
-  });
-}
